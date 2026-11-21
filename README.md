@@ -2,12 +2,19 @@
 
 **Un carattere tipografico per distinguere le vocali accentate a colpo d’occhio.**
 
+
+![Fonetica Font Preview](Preview/Fonetica_Preview.png)
+
+
+[Download Fonetica](https://github.com/xillo/FoneticaFont/releases/latest)
+
 **Nome della famiglia:** Fonetica  
 **Autore delle modifiche:** Davide Perillo  
 **Versione:** 1.0.0 — 21 novembre 2026  
 **Licenza:** SIL Open Font License 1.1
 
 Fonetica è una personalizzazione di **Atkinson Hyperlegible** (versione 1.02), il carattere originariamente realizzato per il Braille Institute of America. La versione Fonetica è stata adattata e pubblicata con un nuovo nome per evidenziare la grafia delle vocali italiane accentate.
+
 
 ## Cosa cambia
 
