@@ -1,6 +1,6 @@
 # Fonetica
 
-**Un carattere tipografico per distinguere le vocali accentate a colpo d’occhio.**
+**Un carattere tipografico per distinguere le vocali accentate e la fonetica delle *e* ed *o* a colpo d’occhio.**
 
 ![Fonetica Font Preview](Preview/Fonetica_Preview.png)
 
@@ -13,15 +13,12 @@
 
 Fonetica è una personalizzazione di **Atkinson Hyperlegible** (versione 1.02), il carattere originariamente realizzato per il Braille Institute of America. La versione Fonetica è stata adattata e pubblicata con un nuovo nome per evidenziare la grafia delle vocali italiane accentate.
 
-## Cosa cambia
-
 | Carattere | Disegno nel font |
 | --- | --- |
 | **è** / **ò** | Corpo della lettera ingrandito a circa il 126,5% dell’originale; accento grave ingrandito e riposizionato |
 | **é** / **ó** | Corpo della lettera rimpicciolito a circa il 67,5% dell’originale; accento acuto ridotto e riposizionato |
-| Lettere non modificate, maiuscole, cifre | Mantengono il disegno del carattere di partenza |
 
-**Importante:** nella terminologia fonetica italiana, **è/ò** sono normalmente **aperte** e **é/ó** sono **chiuse**. Le modifiche visive di Fonetica riguardano la forma dei caratteri e non la pronuncia automaticamente. Il font **non trascrive né corregge** un testo: per visualizzare le distinzioni il testo deve contenere i caratteri accentati corretti.
+**Importante:** nella terminologia fonetica italiana, **è/ò** sono normalmente **aperte** e **é/ó** sono **chiuse**. Il font **non trascrive né corregge** un testo: per visualizzare le distinzioni il testo deve contenere i caratteri accentati corretti.
 
 ## Scaricare e installare
 
