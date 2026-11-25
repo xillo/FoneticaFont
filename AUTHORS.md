@@ -5,6 +5,12 @@
 **Fonetica**  
 Modification, glyph adjustments, font-family naming and adaptation: **Davide Perillo (2026)**.
 
+## Version note
+
+Version **1.1.0** inverts the accented-vowel size logic compared with the initial release:
+- lowercase **è** and **ò** are enlarged;
+- lowercase **é** and **ó** are compact.
+
 ## Underlying original font
 
 **Atkinson Hyperlegible**  

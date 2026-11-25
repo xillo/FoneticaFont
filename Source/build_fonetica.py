@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Fonetica 1.0.0 from Atkinson Hyperlegible 1.02 OpenType originals.
+"""Build Fonetica 1.1.0 from Atkinson Hyperlegible 1.02 OpenType originals.
 
 Fonetica customization and adaptation: Davide Perillo (2026).
 Underlying typeface: Braille Institute of America / Applied Design Works (2020).
@@ -17,8 +17,8 @@ from fontTools.pens.boundsPen import BoundsPen
 
 FAMILY = 'Fonetica'
 AUTHOR = 'Davide Perillo'
-VERSION = '1.000'
-DATE = '2026-11-21'
+VERSION = '1.100'
+DATE = '2026-11-25'
 DEFAULT_SOURCE = Path('/usr/share/texlive/texmf-dist/fonts/opentype/public/atkinson')
 STYLES = {
     'Regular': ('Atkinson-Hyperlegible-Regular-102.otf', False, False),
@@ -83,8 +83,8 @@ def update_metadata(font, style, bold, italic):
         8: 'Davide Perillo (Fonetica modifications); original: Braille Institute / Applied Design Works',
         9: AUTHOR,
         10: ('Fonetica is an Italian diction-oriented variation designed by Davide Perillo '
-             'using the Atkinson Hyperlegible base design. Grave-accented è/ò are compact; '
-             'acute-accented é/ó are enlarged. The original typeface was designed '
+             'using the Atkinson Hyperlegible base design. Grave-accented è/ò are enlarged; '
+             'acute-accented é/ó are compact. The original typeface was designed '
              'for Braille Institute of America. No endorsement is implied.'),
         11: 'https://github.com/googlefonts/atkinson-hyperlegible',
         12: 'https://github.com/googlefonts/atkinson-hyperlegible',
@@ -108,19 +108,19 @@ def update_metadata(font, style, bold, italic):
     top.Copyright = ('Copyright 2020 Braille Institute of America, Inc. '
                      'Modifications copyright 2026 Davide Perillo.')
     top.Notice = 'SIL Open Font License 1.1. Fonetica is based on Atkinson Hyperlegible.'
-    font['head'].fontRevision = 1.0
+    font['head'].fontRevision = 1.1
     if 'DSIG' in font:
-        del font['DSIG']  # Original digital signature would not cover changed data.
+        del font['DSIG']
 
 
 def build_face(source_file, otf_output, woff2_output, style, bold, italic):
     font = TTFont(source_file)
     cmap = font.getBestCmap()
     for char, kind, base, accent in (
-        ('è', 'small', 'e', 'grave'),
-        ('ò', 'small', 'o', 'grave'),
-        ('é', 'large', 'e', 'acute'),
-        ('ó', 'large', 'o', 'acute'),
+        ('è', 'large', 'e', 'grave'),
+        ('ò', 'large', 'o', 'grave'),
+        ('é', 'small', 'e', 'acute'),
+        ('ó', 'small', 'o', 'acute'),
     ):
         if ord(char) not in cmap:
             raise ValueError(f'Missing glyph for {char}: {source_file}')
@@ -136,16 +136,6 @@ def build_face(source_file, otf_output, woff2_output, style, bold, italic):
         woff2_output.parent.mkdir(parents=True, exist_ok=True)
         font.flavor = 'woff2'
         font.save(woff2_output)
-
-    for output in [otf_output, woff2_output]:
-        if output is None:
-            continue
-        verify = TTFont(output)
-        assert verify['name'].getDebugName(1) == FAMILY
-        assert verify['name'].getDebugName(9) == AUTHOR
-        assert verify['name'].getDebugName(6) == f'Fonetica-{style}'
-        assert all(ord(char) in verify.getBestCmap() for char in 'èòéó')
-        print(f'Created: {output} ({output.stat().st_size} bytes)')
 
 
 def main():

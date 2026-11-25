@@ -2,26 +2,23 @@
 
 **Un carattere tipografico per distinguere le vocali accentate a colpo d’occhio.**
 
-
 ![Fonetica Font Preview](Preview/Fonetica_Preview.png)
 
-
-[Download Fonetica](https://github.com/xillo/FoneticaFont/releases/latest)
+[**Download Fonetica**](https://github.com/xillo/FoneticaFont/releases/latest)
 
 **Nome della famiglia:** Fonetica  
 **Autore delle modifiche:** Davide Perillo  
-**Versione:** 1.0.0 — 21 novembre 2026  
+**Versione:** 1.1.0 — 25 novembre 2026  
 **Licenza:** SIL Open Font License 1.1
 
 Fonetica è una personalizzazione di **Atkinson Hyperlegible** (versione 1.02), il carattere originariamente realizzato per il Braille Institute of America. La versione Fonetica è stata adattata e pubblicata con un nuovo nome per evidenziare la grafia delle vocali italiane accentate.
-
 
 ## Cosa cambia
 
 | Carattere | Disegno nel font |
 | --- | --- |
-| **è** / **ò** | Corpo della lettera rimpicciolito a circa il 67,5% dell’originale; accento grave ridotto e riposizionato |
-| **é** / **ó** | Corpo della lettera ingrandito a circa il 126,5% dell’originale; accento acuto ingrandito e riposizionato |
+| **è** / **ò** | Corpo della lettera ingrandito a circa il 126,5% dell’originale; accento grave ingrandito e riposizionato |
+| **é** / **ó** | Corpo della lettera rimpicciolito a circa il 67,5% dell’originale; accento acuto ridotto e riposizionato |
 | Lettere non modificate, maiuscole, cifre | Mantengono il disegno del carattere di partenza |
 
 **Importante:** nella terminologia fonetica italiana, **è/ò** sono normalmente **aperte** e **é/ó** sono **chiuse**. Le modifiche visive di Fonetica riguardano la forma dei caratteri e non la pronuncia automaticamente. Il font **non trascrive né corregge** un testo: per visualizzare le distinzioni il testo deve contenere i caratteri accentati corretti.
@@ -75,4 +72,4 @@ Fonetica è un’opera derivata di Atkinson Hyperlegible distribuita con il nuov
 
 ---
 
-**English:** Fonetica is an Atkinson Hyperlegible-based typeface adaptation by Davide Perillo. Lowercase `è` and `ò` are compact, while `é` and `ó` are enlarged. Four OTF and four WOFF2 styles are included. Released under the SIL Open Font License 1.1, with original-design attribution preserved. See `OFL.txt` and `AUTHORS.md`.
+**English:** Fonetica is an Atkinson Hyperlegible-based typeface adaptation by Davide Perillo. In version 1.1.0, lowercase `è` and `ò` are enlarged, while `é` and `ó` are compact. Four OTF and four WOFF2 styles are included. Released under the SIL Open Font License 1.1, with original-design attribution preserved. See `OFL.txt` and `AUTHORS.md`.
